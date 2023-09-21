@@ -1,5 +1,14 @@
-def sort_array(numbers):
-    # Use the built-in sorted function to sort the numbers in ascending order
-    sorted_numbers = sorted(numbers)
+import random
+import time
 
-    return sorted_numbers
+def test_sort_array_performance():
+    # Generate a random array of 50000 integers
+    numbers = [random.randint(0, 100000) for _ in range(50000)]
+
+    # Measure the time it takes to sort the array using the sort_array function
+    start_time = time.time()
+    sorted_numbers = sort_array(numbers)
+    end_time = time.time()
+
+    # Print the time it took to sort the array
+    print(f"Sorted {len(numbers)} elements in {end_time - start_time:.5f} seconds")

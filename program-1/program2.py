@@ -1,4 +1,15 @@
 def find_max_profit(prices):
+    """
+    Finds the best days to buy and sell stocks to maximize profit, given an array of stock prices.
+    Returns the maximum profit that can be made. If no profit can be made, returns -1.
+
+    Args:
+        prices (list): A list of stock prices.
+
+    Returns:
+        tuple: A tuple containing the buy day, buy price, sell day, sell price, and maximum profit.
+               If no profit can be made, returns -1.
+    """
     if len(prices) < 2:
         return -1
 

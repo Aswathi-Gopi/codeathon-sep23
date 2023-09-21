@@ -1,0 +1,5 @@
+def sort_array(numbers):
+    # Use the built-in sorted function to sort the numbers in ascending order
+    sorted_numbers = sorted(numbers)
+
+    return sorted_numbers
